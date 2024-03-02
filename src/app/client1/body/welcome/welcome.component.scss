@@ -1,0 +1,56 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../styles.scss';
+
+.welcome-content {
+    width: 658px;
+    height: 124px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    font-family: $primary-font;
+    
+    @media (min-width: 768px) and (max-width: 1439px)  {
+      padding: 0px 15px 20px 15px;
+    }
+
+    @media (max-width: 767px) {
+      width: unset;
+      height: 160px;
+      padding: 0px 15px 40px 15px;
+    }
+
+    @mixin text-right {
+        text-align: right;
+    }
+
+    .welcome-title {
+      float: right;
+      height: 33px;
+      padding: 0px 0px 16px 0px;
+      gap: 4px;
+      @include text-right;
+      width: 658px; 
+
+      .title {
+        font-size: $primary-label-font-size;
+        font-weight: $primary-label-font-weight;
+        color: $primary-color;
+      }
+    }
+
+    .welcome-description {
+      @include text-right;
+
+      .description {
+        float: right;
+        font-weight: 400;
+        font-size: 14px; 
+        color: $black-color;
+      }
+    }
+    
+  @media (max-width: 767px) {
+    .welcome-title {
+      width: 345px;
+    }
+  }
+}

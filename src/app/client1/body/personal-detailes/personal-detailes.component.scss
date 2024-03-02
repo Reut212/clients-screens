@@ -1,0 +1,79 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../styles.scss';
+
+
+$input-width: 345px;
+$input-half-width: 166.5px;
+
+@mixin text-right {
+    text-align: right;
+}
+
+@mixin input-styles {
+    border: $primary-border;
+    border-radius: $primary-border-radius;
+    height: 40px;
+    gap: 4px;
+}
+
+.personal-detailes {
+    font-family: $primary-font;
+    padding: 0px 15px;
+    height: 279px;
+    float: right;
+    
+    @media (min-width: 768px) and (max-width: 1439px)  {
+      float: unset;
+  }
+
+  .personal-detailes-title {
+    color: $primary-color;
+    width: 658px;
+    gap: 4px;
+    width: auto; 
+    @include text-right;
+
+    .title {
+      font-size: $primary-label-font-size;
+      font-weight: $primary-label-font-weight;
+      height: 35px;
+    }
+  }
+
+  .text-box-group {
+      display: flex;
+      justify-content: space-between;
+      
+    @media (min-width: 768px) and (max-width: 1439px)  {
+      width: 345px;
+      float: right;
+    }
+  }
+
+  .text-box {
+    @include text-right;
+    
+    .caption-title {
+      font-size: $primary-caption-size;
+      color: $primary-caption-color;
+      width: 18px;
+      height: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0px;
+    }
+
+    .input-container {
+      .input {
+        width: $input-width;
+        @include input-styles;
+      }
+    }
+
+    .input-container-half {
+      .input {
+        @include input-styles;
+      }
+    }
+  }
+}

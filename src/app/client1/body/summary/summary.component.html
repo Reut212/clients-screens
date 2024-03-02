@@ -1,0 +1,12 @@
+<div class="summary">
+    <div class="summary-title">
+        <div class="title">{{ hebData['summary-title'] }}</div>
+    </div>
+    <div class="cards">
+        <div class="card" *ngFor="let card of [hebData['card1'], hebData['card2']]">
+            <div class="title" *ngFor="let item of getCardTitlesAndValues(card)">
+                {{ item.title }} <span class="value">{{ item.value }}</span><br>
+            </div>
+        </div>
+    </div>
+</div>

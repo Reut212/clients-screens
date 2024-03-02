@@ -1,0 +1,70 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../styles.scss';
+
+.summary {
+    font-family: $primary-font;
+    padding: 0px 15px;
+    width: 688px;
+    height: 271px;
+
+    @media (min-width: 768px) and (max-width: 1439px)  {
+        height: 238px;
+        padding: 0px 15px 40px 15px;
+    }
+    @media (max-width: 767px) {
+        width: unset;
+        height: 423px;
+    }
+
+    .summary-title {
+        color: $primary-color;
+        width: 658px;
+        gap: 4px;
+        text-align: right;
+        height: 33px;
+        @media (max-width: 767px) {
+            width: unset;
+        }
+
+        .title {
+            clear: right;
+            font-size: $primary-label-font-size;
+            font-weight: $primary-label-font-weight;
+        }
+    }
+
+    .cards{
+        height: 165px;
+        width: 658px;
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: 767px) {
+            display: unset;
+        }
+        .card {
+            background-color: $white-color;
+            flex: 1;
+            box-shadow: 0px 0px 10px 0px $box-shadow-color;
+            padding: 20px;
+            
+            @media (max-width: 767px) {
+                margin-bottom: 10px;
+            }
+
+            .title {
+                color: $primary-color;
+                text-align: right;
+                margin-bottom: 5px;
+                margin-right: 10px;
+                font-weight: $primary-summary-label-font-weight;
+                
+                .value {
+                    color: $black-color;
+                    float: left;
+                    font-weight: $primary-font-weight;
+                }
+            }
+        }
+    }
+}

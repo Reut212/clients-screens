@@ -1,0 +1,41 @@
+{
+    "welcome-title" : "ברוכים הבאים",
+    "welcome-description": "חברת אשראי צרכני מודיעה בזאת ללווה, כי לצורך בחינת בקשתו לקבלת הלוואה וקבלת החלטה בעניין התקשרות עמו בהסכם הלוואה, החברה תפנה ללשכת אשראי לצורך קבלת חיווי אשראי. מובהר, כי לשם קבלת החיווי, לשכת האשראי תגיש לבנק ישראל בקשה לקבלת נתוני אשראי לגבי הלווה הכלולים במאגר נתוני אשראי",
+    "personal-detailes-title": "פרטים אישיים",
+    "summary-title":"סיכום פעילות",
+    "card1" : {
+        "titles":{
+            "transferred-amount-title": "הסכום שיועבר לחשבונך",
+            "installmentsNumber": "מספר התשלומים",
+            "firstPeriodicPayment": "תשלום תקופתי ראשון",
+            "first periodic payment due date": "מועד חיוב תקופתי ראשון",
+            "interestForPaymentDeferral":"ריבית בגין דחיית תשלום"
+        },
+        "values":{
+            "transferred-amount-title":"₪60,000",
+            "installmentsNumber": "84",
+            "firstPeriodicPayment": "₪957.75",
+            "first periodic payment due date": "02.04.2024",
+            "interestForPaymentDeferral":"₪510.12"
+        }
+    },
+    "card2" : {
+        "titles":{
+            "primeInterestRate":"בסיס הריבית (פריים)",
+            "interestMargin": "מרווח הריבית",
+            "digitalDiscount":"הנחת דיגיטל",
+            "nominalInterestRate":"שיעור הריבית הנומינלית",
+            "adjustedInterestRate":"שיעור הריבית המתואמת"
+        },
+        "values":{
+            "primeInterestRate":"6.25%",
+            "interestMargin": "3.00%",
+            "digitalDiscount":"-0.5%",
+            "nominalInterestRate":"8.75%",
+            "adjustedInterestRate":"9.11%"
+        }
+    },
+    "termsOfTheLoan": "תנאי ההלוואה",
+    "continue": "המשך",
+    "return": "חזור"
+}   

@@ -1,0 +1,82 @@
+@import '../../assets/styles/variables';
+@import '../../styles.scss';
+
+
+@mixin frame-link {
+    height: 17px;
+    gap: 40px;
+    text-align: center;
+    a {
+        color: $primary-color;
+    }
+}
+
+@mixin button($bg-color, $text-color, $border-radius, $border) {
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border-radius: $border-radius;
+    border: $border;
+    background: $bg-color;
+    color: $text-color;
+    margin: 0 7.5px;
+    @media only screen and (min-width: $desktop-screen) {
+        width: 200px;
+    }
+}
+
+@mixin frame-footer {
+    .frame-footer {
+        padding-top: 15px;
+        .footer {
+            padding: 7.5px 0;
+            text-align: center;
+            background: $white-color;
+            box-shadow: 0px 0px 10px 0px $box-shadow-color;
+            .continue-btn {
+                @include button($primary-color, $white-color, $primary-button-border-radius, $primary-button-border);
+            }
+            .return-btn {
+                @include button($white-color, $primary-color, $primary-button-border-radius, $primary-button-border);
+            }
+        }
+    }
+}
+
+.container {
+    height: 720px;
+    .desk-mode-image {
+        display: none;
+    }
+    @media only screen and (min-width: $desktop-screen) {
+        display: flex;
+        .desk-mode-image {
+            width: 650px;
+            background: $desk-mode-background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media only screen and (max-width: $mobile-screen) {
+        height: 956px;
+    }
+    .body2 {
+        margin: 0 auto;
+        width: 790px;
+        @include frame-link;
+        @include frame-footer;
+
+        @media only screen and (min-width: $tablet-screen-min) and (max-width: $tablet-screen-max) {
+            width: 768px;
+            padding-top: 15px;
+        }
+        @media only screen and (max-width: $mobile-screen) {
+            margin: unset;
+            width: unset;
+        }
+        .client3font {
+            font-family: $font-assistant;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../assets/styles/variables';
+
+.body {
+  @media only screen and (min-width: 1440px) {
+    width: 790px;
+    .welcome,
+    .personal-detailes {
+      margin: 0 auto;
+      padding: $padding-vertical $padding-horizontal;
+    }
+    .welcome {
+      height: 124px;
+    }
+    .personal-detailes {
+      width: 688px;
+      height: 271px;
+    }
+    .summary {
+      margin: 0 auto;
+      width: 688px;
+      height: 238px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1439px) {//Tablet
+    height: 633px;
+    padding: $padding-vertical $padding-horizontal;
+
+    .summary {
+      margin: 0 auto;
+      width: 688px;
+      height: 238px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {//Mobile
+    height: 1,056px;
+    .welcome,
+    .personal-detailes {
+      display: flex;
+      justify-content: right;
+    }
+  }
+}

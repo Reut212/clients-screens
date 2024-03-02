@@ -1,0 +1,33 @@
+<div class="personal-detailes">
+    <div class="personal-detailes-title">
+        <div class="title">{{ hebData['personal-detailes-title'] }}</div>
+    </div>
+    <form [formGroup]="personalDetailesForm">
+        <div class="text-box">
+            <label class="caption-title" for="name">שם</label>
+            <div class="input-container">
+                <input type="text" id="name" formControlName="name" class="input">
+            </div>
+        </div>
+        <div class="text-box">
+            <label class="caption-title" for="name">עיר</label>
+            <div class="input-container">
+                <input type="text" id="city" formControlName="city" class="input">
+            </div>
+        </div>
+        <div class="text-box-group">
+            <div class="text-box">
+                <label class="caption-title" for="name">דירה</label>
+                <div class="input-container-half">
+                    <input type="text" id="apartment" formControlName="apartment" class="input">
+                </div>
+            </div>
+            <div class="text-box">
+                <label class="caption-title" for="name">מספר בית</label>
+                <div class="input-container-half">
+                    <input type="text" id="houseNumber" formControlName="houseNumber" class="input">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
