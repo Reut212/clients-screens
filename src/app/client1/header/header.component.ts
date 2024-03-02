@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class HeaderComponent implements OnInit {
   client!: string;
 
-  constructor(private readonly route : ActivatedRoute, ) {}
+  constructor(private readonly route : ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.queryParams
