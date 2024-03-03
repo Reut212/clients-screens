@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import * as hebData from '../../../../assets/heb.json';
+import * as data from '../../../../assets/heb.json';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { HebData } from '../../../interfaces/heb-data.interface';
 
 @Component({
   selector: 'app-personal-detailes',
@@ -9,10 +10,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class PersonalDetailesComponent implements OnInit {
     public personalDetailesForm!: FormGroup;
-    hebData: any;
+    hebData!: HebData;
 
     ngOnInit(): void {
-        this.hebData = hebData;
+      this.hebData = data as HebData;
         this.initForm();
     }
 

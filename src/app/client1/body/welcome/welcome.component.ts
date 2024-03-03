@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as hebData from '../../../../assets/heb.json';
+import * as data from '../../../../assets/heb.json';
+import { HebData } from '../../../interfaces/heb-data.interface';
 
 @Component({
   selector: 'app-welcome',
@@ -7,9 +8,9 @@ import * as hebData from '../../../../assets/heb.json';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-    hebData: any;
+  hebData!: HebData;
 
     ngOnInit(): void {
-        this.hebData = hebData;
+      this.hebData = data as HebData;
     }
 }

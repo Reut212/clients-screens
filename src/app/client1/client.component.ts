@@ -1,5 +1,6 @@
 import { Component, Input, OnInit} from '@angular/core';
-import * as hebData from '../../assets/heb.json';
+import * as data from '../../assets/heb.json';
+import { HebData } from '../interfaces/heb-data.interface';
 import { __values } from 'tslib';
 
 @Component({
@@ -9,12 +10,12 @@ import { __values } from 'tslib';
 })
 export class ClientComponent implements OnInit {
   @Input() client!: string;
-  hebData: any;
+  hebData!: HebData;
 
   constructor() {}
 
 
     ngOnInit(): void {
-      this.hebData = hebData;
+      this.hebData = data as HebData;
     }
 }

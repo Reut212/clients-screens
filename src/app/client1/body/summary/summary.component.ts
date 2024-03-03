@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import * as hebData from '../../../../assets/heb.json';
+import * as data from '../../../../assets/heb.json';
+import { HebData } from '../../../interfaces/heb-data.interface';
 
 @Component({
     selector: 'app-summary',
@@ -7,10 +8,10 @@ import * as hebData from '../../../../assets/heb.json';
     styleUrls: ['./summary.component.scss'],
   })
   export class SummaryComponent implements OnInit {
-    hebData: any;
+    hebData!: HebData;
     
     public ngOnInit(): void {
-        this.hebData = hebData;
+      this.hebData = data as HebData;
     }
 
     public getCardTitlesAndValues(card: any): { title: string, value: string }[] {
