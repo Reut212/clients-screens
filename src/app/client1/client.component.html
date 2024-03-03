@@ -10,8 +10,8 @@
     </div>
     <div class="frame-footer">
         <div class="footer">
-            <button class="continue-btn" disabled>{{ hebData['continue'] }}</button>
-            <button class="return-btn" disabled>{{ hebData['return'] }}</button>
+            <button class="continue-btn" [disabled]="client === '1'">{{ hebData['continue'] }}</button>
+            <button class="return-btn" [disabled]="client === '1'">{{ hebData['return'] }}</button>
         </div>
     </div>
     </div>

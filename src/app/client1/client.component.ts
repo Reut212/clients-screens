@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import * as hebData from '../../assets/heb.json';
 import { __values } from 'tslib';
 
@@ -8,6 +8,7 @@ import { __values } from 'tslib';
   styleUrls: ['./client.component.scss']
 })
 export class ClientComponent implements OnInit {
+  @Input() client!: string;
   hebData: any;
 
   constructor() {}

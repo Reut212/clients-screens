@@ -35,6 +35,10 @@
             box-shadow: 0px 0px 10px 0px $box-shadow-color;
             .continue-btn {
                 @include button($primary-color, $white-color, $primary-button-border-radius, $primary-button-border);
+                    &:disabled {
+                        opacity: 0.6;
+                        cursor: not-allowed;
+                    }
             }
             .return-btn {
                 @include button($white-color, $primary-color, $primary-button-border-radius, $primary-button-border);
