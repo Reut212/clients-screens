@@ -1,6 +1,8 @@
-@import '../../assets/styles/variables';
+@import '../../styles/variables';
 @import '../../styles.scss';
-
+@import '../../styles/client1.scss';
+@import '../../styles/client2.scss';
+@import '../../styles/client3.scss';
 
 @mixin frame-link {
     height: 17px;

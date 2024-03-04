@@ -1,0 +1,29 @@
+:root[data-client="1"] {
+    --primary-color-var: #0082AB;
+    --primary-font-var: 'Heebo';
+    --primary-bg-color-var: #FFFFFF;
+    --primary-font-weight-var: 500;
+    --primary-border-var: 1px solid #DEDEDE;
+    --primary-border-radius-var: 4px;
+    --primary-button-border: 1px solid #8EBBCF;
+    --primary-button-border-radius: 4px;
+    --primary-caption-color: #7E7B7B;
+    --primary-caption-size: 12px;
+    --primary-label-font-size: 14px;
+    --primary-label-font-weight: 500;
+    --primary-summary-label-font-weight: 400;
+}
+
+$primary-color: var(--primary-color-var);
+$primary-bg-color: var(--primary-bg-color-var);
+$primary-font: var(--primary-font-var);
+$primary-border: var(--primary-border-var);
+$primary-font-weight: var(--primary-font-weight-var);
+$primary-border-radius: var(--primary-border-radius-var);
+$primary-button-border: var(--primary-button-border);
+$primary-button-border-radius: var(--primary-button-border-radius);
+$primary-caption-color: var(--primary-caption-color);
+$primary-caption-size: var(--primary-caption-size);
+$primary-label-font-size: var(--primary-label-font-size);
+$primary-label-font-weight: var(--primary-label-font-weight);
+$primary-summary-label-font-weight: var(--primary-summary-label-font-weight);

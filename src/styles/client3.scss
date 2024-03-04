@@ -1,0 +1,31 @@
+
+:root[data-client="3"] {
+    --primary-color-var: #7B098B;
+    --primary-font-var: 'Assistant';
+    --primary-bg-color-var: #F6F6F6;
+    --primary-font-weight-var: 400;
+    --primary-border-var: 1px solid #A6A6A6;
+    --primary-border-radius-var: 10px;
+    --primary-button-border: 1px solid #7B098B;
+    --primary-button-border-radius: 30px;
+    --primary-caption-color: #310538;
+    --primary-caption-size: 13px;
+    --primary-label-font-size: 16px;
+    --primary-label-font-weight: 600;
+    --primary-summary-label-font-weight: 600;
+    ;
+}
+
+$primary-color: var(--primary-color-var);
+$primary-bg-color: var(--primary-bg-color-var);
+$primary-font: var(--primary-font-var);
+$primary-border: var(--primary-border-var);
+$primary-font-weight: var(--primary-font-weight-var);
+$primary-border-radius: var(--primary-border-radius-var);
+$primary-button-border: var(--primary-button-border);
+$primary-button-border-radius: var(--primary-button-border-radius);
+$primary-caption-color: var(--primary-caption-color);
+$primary-caption-size: var(--primary-caption-size);
+$primary-label-font-size: var(--primary-label-font-size);
+$primary-label-font-weight: var(--primary-label-font-weight);
+$primary-summary-label-font-weight: var(--primary-summary-label-font-weight);

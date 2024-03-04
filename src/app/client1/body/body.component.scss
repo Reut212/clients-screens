@@ -1,4 +1,7 @@
-@import '../../../assets/styles/variables';
+@import '../../../styles/client1.scss';
+@import '../../../styles/client2.scss';
+@import '../../../styles/client3.scss';
+@import '../../../styles/variables';
 
 .body {
   @media only screen and (min-width: 1440px) {

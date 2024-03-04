@@ -29,7 +29,20 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input":"src/styles/client1.scss",
+                "bundleName": "client1"
+              },
+              {
+                "input":"src/styles/client2.scss",
+                "bundleName": "client2"
+              },
+              {
+                "input":"src/styles/client3.scss",
+                "bundleName": "client3"
+              }
+
             ],
             "scripts": []
           },
